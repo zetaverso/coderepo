@@ -18,5 +18,13 @@ y de esa forma desarrollo tres posibilidades de test locales: en este caso con u
 
 
 
+DOCUMENTACION DOCKERFILE
 
-    
+1) Primero importo Nodejs de dockerhub:
+   FROM node:latest
+
+2) Luego desarrollo workdir para determinar la ubicacion de mi archivo local del index.js:
+con WORKDIR /HOLA/index.js
+3) Y luego establezco la ejecucion del codigo con CMD de dicha app localizada en mi maquina local
+4)  CMD [ "index.js" ]
+   
